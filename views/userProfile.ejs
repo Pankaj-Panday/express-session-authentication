@@ -2,26 +2,19 @@
 <html lang="en">
 
 <head>
-    <%- include('partials/head') %>
+  <%- include('partials/head') %>
 </head>
 
 <body>
-    <main class="container">
-        <header>
-            <h1>Your Profile</h1>
-        </header>
-        <section class="user-details">
-            <h2>Your Name</h2>
-            <p>
-                <%= name %>
-            </p>
-            <h2>Your Email</h2>
-            <p>
-                <%= email %>
-            </p>
-            <a href="/user/logout" class="btn">Logout</a>
-        </section>
-    </main>
+  <main class="container">
+    <%- include("partials/header") %>
+    <section class="main">
+      <div class="user-details">
+        <h1>Hello <span class="name"><%= name %></span>. Your email is <span class="email"><%= email %></span></h1>
+        <a href="/user/logout" class="btn">Logout</a>
+      </div>
+    </section>
+  </main>
 </body>
 
 </html>

@@ -2,19 +2,20 @@
 <html lang="en">
 
 <head>
-	<%- include('partials/head') %>
+  <%- include('partials/head') %>
 </head>
 
 <body>
-	<main class="container">
-		<header>
-			<h1>Home</h1>
-		</header>
-		<section class="buttons">
-			<a href="/user/signup" class="btn">Sign Up</a>
-			<a href="/user/login" class="btn">Login</a>
-		</section>
-	</main>
+  <main class="container">
+    <%- include('partials/header') %>
+    <section class="intro">
+      <h1>Session Based Authentication</h1>
+      <p>Session-based authentication involves creating a temporary session on the server after a user logs in.<br>
+        A unique token is stored as a cookie in the user's browser, allowing access to restricted areas. <br>
+        Sessions have an expiration time and can be manually logged out. </p>
+      <a href="/user/signup" class="btn">Get Started</a>
+    </section>
+  </main>
 </body>
 
 </html>

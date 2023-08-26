@@ -3,7 +3,7 @@ import { User } from "../models/userModel.js";
 
 const userController = {
 	getSignup: (req, res) => {
-		res.render("signup");
+		res.render("signup", { title: "signup" });
 	},
 	postSignup: async (req, res) => {
 		const name = req.body.username;
@@ -24,7 +24,7 @@ const userController = {
 		}
 	},
 	getLogin: (req, res) => {
-		res.render("login");
+		res.render("login", { title: "login" });
 	},
 	postLogin: async (req, res) => {
 		const email = req.body.email;
@@ -59,6 +59,7 @@ const userController = {
 		res.render("userProfile.ejs", {
 			name: req.session.name,
 			email: req.session.email,
+			title: "profile",
 		});
 	},
 	logout: (req, res) => {

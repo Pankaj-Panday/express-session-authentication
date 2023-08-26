@@ -2,27 +2,32 @@
 <html lang="en">
 
 <head>
-    <%- include('partials/head') %>
-        <link rel="stylesheet" href="styles/signup.css">
+  <%- include('partials/head') %>
 </head>
 
 <body>
-    <main class="container">
-        <header>
-            <h1>Sign Up</h1>
-        </header>
-        <section class="signup-form">
-            <form action="/user/signup" method="post">
-                <label for="name">Full Name</label>
-                <input type="text" name="username" id="name" required>
-                <label for="email">Email</label>
-                <input type="text" name="email" id="email" required>
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password" required>
-                <button class="btn">Sign Up</button>
-            </form>
-        </section>
-    </main>
+  <main class="container">
+    <%- include("partials/header") %>
+    <section class="main">
+      <div class="ls-form">
+        <form action="/user/signup" method="post">
+          <div class="form-elem">
+            <label for="name">Full Name</label>
+            <input type="text" name="username" id="name" required>
+          </div>
+          <div class="form-elem">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" required>
+          </div>
+          <div class="form-elem">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required>
+          </div>
+          <button class="btn">Sign Up</button>
+        </form>
+      </div>
+    </section>
+  </main>
 </body>
 
 </html>
