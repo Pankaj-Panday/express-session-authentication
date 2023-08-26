@@ -80,3 +80,8 @@ The project follows a standard MVC structure:
 1. Run the application:
    `npm start`
 1. Access the application in your web browser at http://localhost:3000.
+
+## Demo
+
+https://github.com/Pankaj-Panday/express-session-authentication/assets/55234406/680284a4-c9fe-4288-a8f8-a2bd3db8494c
+
